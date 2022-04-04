@@ -1,7 +1,10 @@
 # bugg-cm4-firmware
 
-This is part of a project developing a fully autonomous ecosystem monitoring device. The full details of an earlier version of the device is described in an [academic paper](https://www.biorxiv.org/content/early/2017/12/18/236075). This page focuses on the details of the software running on a newer embedded device called [Bugg](https://www.bugg.xyz/).
+[Bugg](https://www.bugg.xyz/) is a research project developing technologies for fully autonomous eco-acoustic monitoring. 
 
+Bugg recording devices are based on the Raspberry Pi Compute Module 4 (CM4) and record, (optionally) compress, and robustly upload audio data from the field to a server. This repository contains all the custom firmware running on the CM4, and assumes the module is inserted into the custom Bugg PCBs.
+
+This project was built on an earlier prototype described in an [academic paper](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13089) which should be cited when using this work. 
 
 ## Code design
 
