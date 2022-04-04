@@ -128,6 +128,15 @@ Note that threads are used to run the ``capture_data`` and ``postprocess`` metho
 
 Finally add ``from sensors.YourNewSensor import YourNewSensor`` to ``sensors/__init__.py``
 
+## To-dos
+
+### Implement off times for the recording schedule. 
+
+The configuration tool already allows users to pick specific hours of the day for recording, but this is not implemented yet in the firmware. Ideally the Pi would turn off or enter a low-power state during off times to conserve power.
+
+### Offline mode
+
+There is an offline mode in the firmware that means any attempts for connecting to the internet (updating time, uploading data) are skipped rather than just waiting for time outs. This is currently a hard flag, but should be loaded from the configuration file ideally.
 
 ## Authors
 This is a cross disciplinary research project based at Imperial College London, across the Faculties of Engineering, Natural Sciences and Life Sciences.
