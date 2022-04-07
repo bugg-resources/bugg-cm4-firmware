@@ -1,3 +1,5 @@
+![cc-by-nc-sa-shield](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
+
 # bugg-cm4-firmware
 
 [Bugg](https://www.bugg.xyz/) is a research project developing technologies for fully autonomous eco-acoustic monitoring. 
