@@ -4,7 +4,7 @@
 
 Bugg recording devices are based on the Raspberry Pi Compute Module 4 (CM4) and record, (optionally) compress, and robustly upload audio data from the field to a server. This repository contains all the custom firmware running on the CM4, and assumes the module is inserted into the custom Bugg PCBs.
 
-For a full overview of the design of the Bugg recording device and mechanical assembly instructions please refer to the [Bugg hardware handover document](https://raw.githubusercontent.com/bugg-resources/bugg-handover/master/bugg-handover.pdf?token=GHSAT0AAAAAABSRG7B7T6BEZWMJQBPE7FNYYSNI6KQ).
+For a full overview of the electronic and mechanical design of the Bugg recording device and detailed assembly instructions please refer to the [Bugg hardware handover document](https://raw.githubusercontent.com/bugg-resources/bugg-handover/master/bugg-handover.pdf?token=GHSAT0AAAAAABSRG7B7T6BEZWMJQBPE7FNYYSNI6KQ).
 
 This project was built on an earlier prototype described in an [academic paper](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13089) which should be cited when using this work. 
 
