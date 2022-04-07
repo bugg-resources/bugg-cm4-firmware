@@ -36,7 +36,7 @@ The ``mobile_network`` part contains the APN details for the SIM card in the Bug
 
 The ``device`` part contains relevant details to link the data to the correct project and configuration file on the Bugg backend (soon also being made open-source).
 
-The remaining elements in ``config.json`` contain the authentication details for the service account created on the Google Cloud Services console. On the GCS console you can download the key for a service account in JSON, and this should match the format of the Bugg's ``config.json`` file.
+The remaining elements in ``config.json`` contain the authentication details for a service account created on the Google Cloud Services console (default upload route for the device is to a GCS bucket). On the GCS console you can download the key for a service account in JSON, and this should match the format of the Bugg's ``config.json`` file.
 
 ## Setup
 
