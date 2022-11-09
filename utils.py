@@ -175,12 +175,12 @@ def copy_sd_card_config(sd_mount_loc, config_fname):
         m_uname = modem_config['username']
         m_pwd = modem_config['password']
         m_host = modem_config['hostname']
-        m_conname = m_host.replace('.','')
+        m_conname = m_host.replace('.','') + config['device']['config_id']
 
         # Add the profile to the network manager
         logging.info('Adding profile {}: host {} uname {} pwd {} to network manager'.format(m_conname, m_host, m_uname, m_pwd))
         nm_cmd = 'sudo nmcli connection add type gsm ifname \'*\' con-name \'{}\' apn \'{}\' connection.autoconnect yes'.format(m_conname, m_host)
-        
+
         # Check if username and password aren't blank before adding them to the profile
         if m_uname.strip() != '':
             nm_cmd = nm_cmd + '  gsm.username {}'.format(m_uname)
