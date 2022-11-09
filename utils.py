@@ -179,8 +179,14 @@ def copy_sd_card_config(sd_mount_loc, config_fname):
 
         # Add the profile to the network manager
         logging.info('Adding profile {}: host {} uname {} pwd {} to network manager'.format(m_conname, m_host, m_uname, m_pwd))
-        nm_cmd = 'sudo nmcli connection add type gsm ifname \'*\' con-name \'{}\' apn \'{}\' connection.autoconnect yes gsm.username {} gsm.password {}'
-        nm_cmd = nm_cmd.format(m_conname, m_host, m_uname, m_pwd)
+        nm_cmd = 'sudo nmcli connection add type gsm ifname \'*\' con-name \'{}\' apn \'{}\' connection.autoconnect yes'.format(m_conname, m_host)
+        
+        # Check if username and password aren't blank before adding them to the profile
+        if m_uname.strip() != '':
+            nm_cmd = nm_cmd + '  gsm.username {}'.format(m_uname)
+        if m_pwd.strip() != '':
+            nm_cmd = nm_cmd + '  gsm.password {}'.format(m_pwd)
+
         call_cmd_line(nm_cmd)
 
     except Exception as e:
