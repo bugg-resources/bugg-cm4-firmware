@@ -1,6 +1,14 @@
 ![cc-by-nc-sa-shield](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 
-# bugg-cm4-firmware
+---
+
+# Deprecated: November 2024
+
+Please see the repositories [buggOS](https://github.com/bugg-resources/buggOS) and [buggd](https://github.com/bugg-resources/buggd) for the latest implementation of the Bugg firmware.
+
+---
+
+# bugg-cm4-firmware [Deprecated]
 
 [Bugg](https://www.bugg.xyz/) is a research project developing technologies for fully autonomous eco-acoustic monitoring. 
 
